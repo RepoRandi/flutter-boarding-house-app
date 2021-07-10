@@ -1,3 +1,4 @@
+import 'package:boarding_house/pages/splash_page.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -9,13 +10,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-          appBar: AppBar(
-            title: Text('Boarding House'),
-          ),
-          body: Center(
-            child: Text('Boarding House'),
-          )),
+      theme: ThemeData(
+        fontFamily: 'Poppins',
+      ),
+      home: SplashPage(),
     );
   }
 }

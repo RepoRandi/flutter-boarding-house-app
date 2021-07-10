@@ -1,3 +1,4 @@
+import 'package:boarding_house/pages/home_page.dart';
 import 'package:boarding_house/themes/theme.dart';
 import 'package:flutter/material.dart';
 
@@ -56,7 +57,14 @@ class SplashPage extends StatelessWidget {
                           fontSize: 18,
                         ),
                       ),
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => HomePage(),
+                          ),
+                        );
+                      },
                     ),
                   ),
                   SizedBox(height: 23),
